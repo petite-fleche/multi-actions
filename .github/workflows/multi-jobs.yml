@@ -12,7 +12,7 @@ jobs:
           echo "BUILD_PATH=dist/" >> $GITHUB_ENV
 
       - name: Affichage de la variable
-        run: echo "Répertoire de build : $BUILD_PATH"
+        run: 'echo "Répertoire de build : $BUILD_PATH"'
 
   test:
     needs: build
